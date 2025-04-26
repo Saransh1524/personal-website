@@ -65,7 +65,7 @@
     "react",
     "reactjs"
   ],
-  "author": "hunghg255",
+  "author": "Saransh1524",
   "license": "MIT",
   "browserslist": [
     ">0.2%",
@@ -75,10 +75,10 @@
   "homepage": "http://localhost:3005",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hunghg255/hung.me"
+    "url": "https://github.com/Saransh1524/personal-website"
   },
   "bugs": {
-    "url": "https://github.com/hunghg255/hung.me/issues"
+    "url": "https://github.com/Saransh1524/personal-website/issues"
   },
   "git-hooks": {
     "commit-msg": "npm run verify-commit"
