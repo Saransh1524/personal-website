@@ -1,0 +1,87 @@
+{
+  "name": "saransh-portfolio",
+  "description": "My personal website",
+  "version": "2.5.5",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3005",
+    "lint": "next lint",
+    "gen-icon": "csvgtocss",
+    "prepare": "git-scm-hooks",
+    "verify-commit": "verify-commit-msg",
+    "build:registry": "node ./scripts/build-registry.js && prettier --write ./__registry__/index.tsx"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.3.1",
+    "@studio-freight/lenis": "^0.2.28",
+    "aos": "^2.3.4",
+    "babel-plugin-react-compiler": "0.0.0-experimental-63b359f-20241029",
+    "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "contentlayer2": "^0.5.3",
+    "cookies-next": "^2.1.2",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^11.13.5",
+    "lucide-react": "^0.454.0",
+    "next": "15.1.0",
+    "next-contentlayer2": "^0.5.3",
+    "next-sitemap": "^4.2.3",
+    "next-themes": "^0.3.0",
+    "rc-progress": "^4.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-use-measure": "^2.1.1",
+    "sharp": "^0.33.5",
+    "tailwind-merge": "^2.5.5",
+    "usehooks-ts": "^3.1.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@octokit/types": "^9.3.2",
+    "@types/aos": "^3.0.7",
+    "@types/node": "18.7.16",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
+    "autoprefixer": "^10.4.20",
+    "csvgtocss": "^0.1.1",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.3.0",
+    "git-scm-hooks": "^0.0.11",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0",
+    "stream": "^0.0.3",
+    "string_decoder": "^1.3.0",
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "4.8.3",
+    "verify-commit-msg": "^0.0.14"
+  },
+  "keywords": [
+    "nextjs",
+    "portfolio",
+    "react",
+    "reactjs"
+  ],
+  "author": "hunghg255",
+  "license": "MIT",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "homepage": "http://localhost:3005",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunghg255/hung.me"
+  },
+  "bugs": {
+    "url": "https://github.com/hunghg255/hung.me/issues"
+  },
+  "git-hooks": {
+    "commit-msg": "npm run verify-commit"
+  },
+  "packageManager": "pnpm@10.0.0-beta.3"
+}
