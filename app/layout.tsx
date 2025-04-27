@@ -9,40 +9,40 @@ export default function RootLayout({ children }: any) {
     <html className={fontGeist.variable} suppressHydrationWarning>
       <head>
         <meta charSet='utf-8' />
-        <title>Hunghg | Front-end Developer</title>
-        <meta property='og:site_name' content='Hunghg | Front-end Developer' />
+        <title>Saransh Naole | Software Developer</title>
+        <meta property='og:site_name' content='Saransh Naole' />
         <meta property='og:type' content='website' />
 
-        <link rel='shortcut icon' href='/favicon.ico' />
+        {/* <link rel='shortcut icon' href='/favicon.ico' /> */}
 
-        <meta name='title' content='Hunghg | Front-end Developer' />
+        <meta name='title' content='Saransh Naole' />
         <meta
           name='description'
-          content="I'm Hung an Front-end Developer. I got a bachelor of Electronics Telecommunication Engineering at Ha Noi University of Science and Technology (2015 - 2020)"
+          content=""
         />
-        <meta property='og:locale' content='vi_VN' />
+        <meta property='og:locale' content='en_US' />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://hunghg.me/' />
-        <meta property='og:title' content='Hunghg | Front-end Developer' />
+        <meta property='og:url' content='https://saranshnaole.tech/' />
+        <meta property='og:title' content='Saransh Naole' />
         <meta
           property='og:description'
-          content="I'm Hung an Front-end Developer. I got a bachelor of Electronics Telecommunication Engineering at Ha Noi University of Science and Technology (2015 - 2020)"
+          content=""
         />
         <meta
           property='og:image'
-          content='https://cdn.jsdelivr.net/gh/hunghg255/static/og-img.png'
+          content='/og-image.png'
         />
 
         <meta property='twitter:card' content='summary_large_image' />
-        <meta property='twitter:url' content='https://hunghg.me/' />
-        <meta property='twitter:title' content='Hunghg | Front-end Developer' />
+        <meta property='twitter:url' content='https://saranshnaole.tech/' />
+        <meta property='twitter:title' content='Saransh Naole' />
         <meta
           property='twitter:description'
-          content="I'm Hung an Front-end Developer. I got a bachelor of Electronics Telecommunication Engineering at Ha Noi University of Science and Technology (2015 - 2020)"
+          content=""
         />
         <meta
           property='twitter:image'
-          content='https://cdn.jsdelivr.net/gh/hunghg255/static/og-img.png'
+          content='/og-image.png'
         />
 
         <meta property='og:image:type' content='image/jpeg' />

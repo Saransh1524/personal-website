@@ -109,6 +109,7 @@
   .headerText {
     margin-bottom: 0;
   }
+
   .headerText h1 {
     font-size: 7rem;
   }
@@ -151,6 +152,7 @@
     top: -11%;
     right: -6%;
   }
+
   .headerImage img {
     max-width: 768px !important;
   }
@@ -172,9 +174,11 @@
   0% {
     bottom: 10px;
   }
+
   50% {
     bottom: 28px;
   }
+
   100% {
     bottom: 10px;
   }
@@ -191,6 +195,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

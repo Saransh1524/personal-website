@@ -3,6 +3,7 @@
   gap: 12px;
   flex-flow: wrap;
   margin: 4px 0 0;
+
   @media (max-width: 768px) {
     gap: 8px;
   }
@@ -61,52 +62,62 @@
   border: 1px solid #e54b31;
   color: #e54b31;
 }
+
 .nginx,
 .tips {
   background-color: rgb(5, 114, 43, 0.3);
   border: 1px solid #05722b;
   color: #05722b;
 }
+
 .nodejs {
   background-color: rgb(136, 188, 61, 0.3);
   border: 1px solid #88bc3d;
   color: #88bc3d;
 }
+
 .reactjs {
   background-color: rgb(2, 210, 242, 0.3);
   border: 1px solid #02d2f2;
   color: #02d2f2;
 }
+
 .scss {
   background-color: rgb(194, 97, 146, 0.3);
   border: 1px solid #c26192;
   color: #c26192;
 }
+
 .typescript {
   background-color: rgb(46, 114, 188, 0.3);
   border: 1px solid #2e72bc;
   color: #2e72bc;
 }
+
 .vitejs {
   background-color: rgb(134, 108, 240, 0.3);
   border: 1px solid #866cf0;
   color: #866cf0;
 }
+
 .webpack {
   background-color: rgb(27, 113, 182, 0.3);
   border: 1px solid #1b71b6;
   color: #1b71b6;
 }
+
 .solidjs {
   background-color: rgb(3, 69, 142, 0.3);
   border: 1px solid #03458e;
   color: #03458e;
 }
+
 .sveltejs {
   background-color: rgb(242, 59, 0, 0.3);
   border: 1px solid #f23b00;
   color: #f23b00;
 }
+
 .vuejs {
   background-color: rgb(3, 179, 123, 0.3);
   border: 1px solid #03b37b;
@@ -139,6 +150,7 @@
   background: rgba(255, 255, 255, 0.01);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+
   .img {
     position: relative;
     aspect-ratio: 4 / 3;
@@ -163,6 +175,7 @@
     text-align: left;
     line-height: 20px;
     margin: 0 0 12px !important;
+
     @media (max-width: 768px) {
       font-size: 14px !important;
     }
@@ -171,7 +184,33 @@
 
 .date {
   font-size: 14px !important;
+
   @media (max-width: 768px) {
     font-size: 12px !important;
+  }
+}
+
+.noBlogs {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 8px;
+  border: 1px solid var(--border-repo);
+  margin-top: 20px;
+
+  p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 500;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

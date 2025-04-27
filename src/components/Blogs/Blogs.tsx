@@ -3,13 +3,14 @@
 import dayjs from 'dayjs';
 import Link from 'next/link';
 import Parser from 'rss-parser';
+import Image from 'next/image';
 
 import BlogTag from './BlogTag';
 import styles from './index.module.scss';
 // import { BlurImage } from 'src/components/UI/BlurImage/BlurImage';
 import React from 'react';
 
-const MEDIUM_RSS_URL = 'https://medium.com/feed/@yourusername'; // Replace with your Medium username
+const MEDIUM_RSS_URL = 'https://medium.com/feed/@naolesaransh';
 
 export async function fetchMediumBlogs() {
   const parser = new Parser();
@@ -54,7 +55,17 @@ export const BlogsSkeleton = () => {
 };
 
 const Blogs = ({ blogsWebtotal }: any) => {
-  if (!blogsWebtotal?.length) return <BlogsSkeleton />;
+  if (!blogsWebtotal?.length) {
+    return (
+      <>
+        <h1 className={styles.title1}>Blogs</h1>
+        <div className={styles.noBlogs}>
+          <p>No blog posts available yet. Check back soon for updates!</p>
+          <p>Follow me on <a href="https://medium.com/@naolesaransh" target="_blank" rel="noopener noreferrer">Medium</a> to see my latest articles.</p>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -64,24 +75,19 @@ const Blogs = ({ blogsWebtotal }: any) => {
         {blogsWebtotal.map((blog, idx) => {
           const tags = blog.category?.length
             ? blog.category.map((it) => {
-                return {
-                  sys: {
-                    id: it._text,
-                  },
-                };
-              })
+              return {
+                sys: {
+                  id: it._text,
+                },
+              };
+            })
             : [];
-          if (
-            !blog.link._text.includes('blogs') ||
-            blog.link._text === 'https://blog.hunghg.me/blogs/blog'
-          )
-            return <React.Fragment key={`blog-webtotal-${idx}`}></React.Fragment>;
 
           return (
             <div key={`blog-webtotal-${idx}`} className={styles.blogItem}>
               <Link target='_blank' href={blog.link._text}>
                 <div className={styles.img}>
-                  {/* <BlurImage
+                  <Image
                     src={blog?.enclosure?._attributes?.url || '/images/projects/default.png'}
                     alt=''
                     width={311}
@@ -90,7 +96,7 @@ const Blogs = ({ blogsWebtotal }: any) => {
                     style={{
                       objectFit: 'contain',
                     }}
-                  /> */}
+                  />
                 </div>
                 <div className={styles.content}>
                   <h2>{blog.title._cdata}</h2>

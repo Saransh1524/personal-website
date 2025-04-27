@@ -41,8 +41,10 @@ body::-webkit-scrollbar {
 }
 
 body {
-  -ms-overflow-style: none; /* IE, Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE, Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 section {
@@ -68,22 +70,42 @@ section {
   animation: logoDraw 8s ease forwards infinite;
 }
 
+/* Custom styling for the S-shaped logo */
+.icon-logo .logo_letters__1_W2_ path {
+  fill: var(--highlight-color);
+  stroke: none;
+  transition: fill 350ms;
+}
+
+/* Ensure the circle background still has the stroke animation */
+.icon-logo .logo_circle__6ao4W {
+  stroke: var(--highlight-color);
+  fill: none;
+  stroke-dashoffset: 1px;
+  stroke-dasharray: 350px 0;
+  animation: logoDraw 8s ease forwards infinite;
+}
+
 @keyframes logoDraw {
   0% {
     stroke-dashoffset: 1px;
     stroke-dasharray: 0 1000;
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   40% {
     stroke-dasharray: 1000 0;
   }
+
   /* Moving back */
   85% {
     stroke-dasharray: 1000 0;
   }
+
   95%,
   to {
     stroke-dasharray: 0 1000;
@@ -91,6 +113,7 @@ section {
 }
 
 .blogDetail {
+
   ol,
   ul {
     list-style: initial !important;
@@ -128,15 +151,19 @@ section {
   animation: none;
   mix-blend-mode: normal;
 }
+
 ::view-transition-old(root) {
   z-index: 1;
 }
+
 ::view-transition-new(root) {
   z-index: 9999;
 }
+
 [data-theme='dark']::view-transition-old(root) {
   z-index: 9999;
 }
+
 [data-theme='dark']::view-transition-new(root) {
   z-index: 1;
 }
@@ -144,12 +171,10 @@ section {
 .skeleton {
   background-color: var(--skeleton) !important;
   // The shine that's going to move across the skeleton:
-  background-image: linear-gradient(
-    90deg,
-    rgba(#fff, 0),
-    rgba(#fff, 0.5),
-    rgba(#fff, 0)
-  ) !important;
+  background-image: linear-gradient(90deg,
+      rgba(#fff, 0),
+      rgba(#fff, 0.5),
+      rgba(#fff, 0)) !important;
   background-size: 40px 100%; // width of the shine
   background-repeat: no-repeat; // No need to repeat the shine effect
   background-position: left -40px top 0; // Place shine on the left side, with offset on the left based on the width of the shine - see background-size
@@ -163,8 +188,7 @@ section {
   }
 }
 
-.no-scrollbar {
-}
+.no-scrollbar {}
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

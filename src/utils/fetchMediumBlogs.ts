@@ -1,6 +1,6 @@
 import Parser from 'rss-parser';
 
-const MEDIUM_RSS_URL = 'https://medium.com/feed/@yourusername'; // Replace with your Medium username
+const MEDIUM_RSS_URL = 'https://medium.com/feed/@naolesaransh';
 
 export async function fetchMediumBlogs() {
   const parser = new Parser();
