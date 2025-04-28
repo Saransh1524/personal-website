@@ -60,8 +60,6 @@ export default function RootLayout({ children }: any) {
           name='google-site-verification'
           content='rqkQvaV705ZKW_sDtCtBkos8BtnWhSEwXZXS6YlhSEI'
         />
-
-        <script src='https://cursor-party.hunghg255.partykit.dev/cursors.js' defer></script>
       </head>
       <body>
         <ClientComponent>
