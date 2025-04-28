@@ -22,9 +22,6 @@ const Plum = dynamic(() => import('src/components/Plum/Plum'), {
 // const Progressbar = dynamic(() => import('src/components/Progessbar/Progessbar'), {
 //   ssr: false,
 // });
-const LogArt = dynamic(() => import('src/components/LogArt/LogArt'), {
-  ssr: false,
-});
 const ButtonScrollTop = dynamic(() => import('src/components/ButtonScrollTop'), {
   ssr: false,
 });
@@ -46,7 +43,6 @@ const ClientComponent = ({ children }) => {
       {/* <Cursor /> */}
       <Plum />
       {/* <Progressbar /> */}
-      <LogArt />
       {/* <ButtonScrollTop /> */}
     </>
   );
