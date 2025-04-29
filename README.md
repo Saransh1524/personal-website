@@ -1,4 +1,4 @@
-**[hung.me](https://hunghg.me)**
+**[saranshnaole.tech](https://saranshnaole.tech)**
 
 My personal website powered by [Nextjs](https://nextjs.org/)
 
