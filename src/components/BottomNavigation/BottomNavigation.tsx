@@ -78,7 +78,7 @@ const BottomNavigation = () => {
           </li>
           <li className={styles.navItem}>
             <a
-              href='https://drive.google.com/file/d/1fpNOFW9K-tc_RGgux55s_4j1oby4El03/view?usp=sharing'
+              href='https://drive.google.com/file/d/14_V3hfYsvmcexLtyM3mo2koMLnK2rwOi/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Resume'
