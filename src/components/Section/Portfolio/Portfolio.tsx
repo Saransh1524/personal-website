@@ -13,7 +13,7 @@ const PROJECTS = [
     name: 'Cloud File Manager',
     description: 'A robust cloud file manager enabling users to upload, manage, and access their files seamlessly.',
     stack: 'Nextjs, Firebase, Tailwindcss',
-    linkDemo: 'https://cfm-wfmf-a2494kcxv-saransh-naoles-projects.vercel.app/',
+    linkDemo: 'https://cfm-wfmf.vercel.app/',
     source: 'https://github.com/Saransh1524/cfm',
     // image: '/images/projects/reactjs-editor.png',
   },
